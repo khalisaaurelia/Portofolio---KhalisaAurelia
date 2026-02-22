@@ -98,7 +98,7 @@
         .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; }
         .section-title span { border-bottom: 3px solid var(--primary-pink); }
 
-        /* --- ABOUT & EDUCATION (SPLIT LAYOUT) --- */
+        /* --- ABOUT & EDUCATION --- */
         .profile-header {
             display: flex;
             justify-content: center;
@@ -149,7 +149,6 @@
             gap: 10px;
         }
 
-        /* Update: About Me Paragraph Justify */
         .about-text {
             text-align: justify;
         }
@@ -231,13 +230,19 @@
             margin-bottom: 15px;
         }
 
+        /* --- LINKS WRAPPER --- */
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
         .cert-link {
             font-size: 0.85rem;
             color: var(--primary-pink);
             font-weight: 600;
             text-decoration: underline;
-            display: block;
-            margin-top: 10px;
+            display: inline-block;
         }
 
         .dummy-card {
@@ -385,7 +390,11 @@
                 <p class="project-desc">
                     This project analyzes U.S. aircraft arrival delays by examining total delays, identifying major causes, comparing airline performance, evaluating yearly delay percentages, and exploring geographic patterns to uncover trends and key contributing factors.
                 </p>
-                <a href="https://public.tableau.com/views/ExcercisesProjectUSFlightDelay/USFlightDelay?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="cert-link">Click Here</a>
+                
+                <div class="project-links">
+                    <a href="https://public.tableau.com/views/ExcercisesProjectUSFlightDelay/USFlightDelay?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="cert-link">Dashboard</a>
+                    <a href="https://khalisaaurelia.github.io/Analysis-Flight-Delays/" target="_blank" class="cert-link">Read More</a>
+                </div>
             </div>
             
             <div></div> 
